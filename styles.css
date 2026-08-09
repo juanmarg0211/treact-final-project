@@ -341,3 +341,88 @@ QUALITY SECTION
   height: auto;
   display: block;
 }
+
+/*
+
+STEPS SECTION
+
+*/
+
+.steps__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 80px 20px;
+}
+
+.steps__image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps__image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.steps__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.steps__title {
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.steps__subtitle {
+  color: #494646;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.steps__list {
+  display: flex;
+  flex-direction: column;
+}
+.step {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 28px;
+}
+
+.step__number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #49464675;
+  margin-right: 20px;
+}
+
+.step__description {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.step__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #494646;
+  margin-bottom: 8px;
+}
+
+.step__description--para {
+  color: #49464675;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+}
