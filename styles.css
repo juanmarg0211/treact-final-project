@@ -724,3 +724,121 @@ PRICING SECTION
 .plan__business .plan__middle {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+
+/*
+
+TESTIMONIALS SECTION
+
+*/
+
+.testimonials__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  padding: 80px 20px;
+}
+
+.testimonials__image,
+.testimonials__content {
+  width: 50%;
+}
+
+.testimonials__content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.testimonials__title {
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.testimonials__subtitle {
+  color: #494646;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.testimonials__description {
+  color: #49464675;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.testimonial__rating {
+  color: rgba(246, 173, 85);
+  margin-bottom: 20px;
+}
+
+.testimonial__title {
+  color: #494646;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.testimonial__description {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: rgb(74 85 104);
+  margin-bottom: 20px;
+}
+
+.testimonial__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonial__profile--image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.testimonial__profile--name {
+  color: #494646;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.testimonial__profile--position {
+  color: #49464675;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 4px;
+}
+
+.testimonial__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto
+}
+
+.testimonial__button {
+  padding: 16px;
+  margin: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf2f7;
+  border-radius: 50%
+}
