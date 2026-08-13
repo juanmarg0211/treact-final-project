@@ -321,6 +321,8 @@ QUALITY SECTION
 }
 
 .quality__button {
+  display: block;
+  margin: 0 auto;
   background-color: #5d3eff;
   padding: 8px 20px;
   border-radius: 50px;
@@ -425,6 +427,116 @@ STEPS SECTION
   font-size: 16px;
   font-weight: 500;
   line-height: 2;
+}
+
+/*
+
+VALUES SECTION
+
+*/
+
+.values__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.values__content,
+.values__image {
+  width: 50%;
+}
+
+.values__content {
+  padding: 32px 64px 32px 0;
+}
+
+.values__title {
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.values__subtitle {
+  color: #494646;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.values__description--para {
+  color: #49464675;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.values__principles {
+  margin: 24px 0;
+}
+
+.values__principles--list {
+  display: flex;
+  max-width: none;
+  flex-direction: row;
+}
+
+.values__principle {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+}
+
+.values__principle--title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.values__image--wrapper {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.values__image--wrapper--affordable {
+  background-color: rgba(15, 153, 61, 0.623);
+}
+
+.values__image--wrapper--professionalism {
+  background-color: rgba(189, 35, 35, 0.671);
+}
+
+.values__principle--name {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #243e63;
+}
+
+.values__principle--description {
+  font-size: 18px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #49464675;
+}
+
+.values__button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #5d3eff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: white;
+  width: fit-content;
 }
 
 /*
