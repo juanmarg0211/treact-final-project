@@ -1613,6 +1613,18 @@ SMALL PHONES, LARGE SMARTPHONES
     max-width: none;
   }
 
+  .quality__subtitle {
+    font-size: 30px;
+  }
+
+  .steps__subtitle {
+    font-size: 30px;
+  }
+
+  .values__subtitle {
+    font-size: 30px;
+  }
+
   .pricing__subtitle {
     font-size: 40px;
   }
