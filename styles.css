@@ -1196,182 +1196,357 @@ footer {
 
 /*
 
-SMALL PHONES, TABLETS, LARGE SMARTPHONES 
+TABLETS, SMALL LAPTOPS
 
 */
 
 @media (max-width: 1024px) {
-.nav__links {
-  display: none;
+  .nav__links {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+
+  .about__container {
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .about__content {
+    width: 100%;
+  }
+
+  .about__title {
+    font-size: 32px;
+  }
+
+  .about__description {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 8px;
+  }
+
+  .about__input--container {
+    margin: 18px auto 0;
+  }
+
+  .about__image {
+    width: 100%;
+  }
+
+  .features__container {
+    width: 90%;
+  }
+
+  .features__description {
+    justify-content: center;
+    text-align: center;
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .features__item {
+    width: calc(100% / 2);
+  }
+
+  .quality__subtitle {
+    font-size: 36px;
+  }
+
+  .quality__button {
+    margin: 0;
+  }
+
+  .quality__content {
+    padding-right: 100px;
+  }
+
+  .quality__image {
+    padding-right: 80px;
+  }
+
+  .steps__subtitle {
+    font-size: 36px;
+  }
+
+  .steps__image {
+    width: 60%;
+  }
+
+  .steps__content {
+    width: 40%;
+  }
+
+  .values__title {
+    text-align: left;
+  }
+
+  .values__subtitle {
+    font-size: 36px;
+  }
+
+  .values__principles--list {
+    flex-wrap: wrap;
+  }
+
+  .values__principle--title {
+    justify-content: left;
+  }
+
+  .values__principle--description {
+    text-align: left;
+  }
+
+  .values__button {
+    margin: 0;
+  }
+
+  .plans {
+    margin-top: 44px;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 24px;
+    margin-top: 24px;
+  }
+
+  .testimonials__image {
+    padding-right: 16px;
+  }
+
+  .testimonials__subtitle {
+    font-size: 44px;
+  }
+
+  .testimonial__profile {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .testimonial__profile--image {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .testimonial__profile--info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .testimonial__profile--name {
+    padding-top: 0;
+  }
+
+  .testimonial__profile--position {
+    padding-top: 4px;
+  }
+
+  .testimonial__buttons {
+    margin: 0;
+  }
+
+  .start__container {
+    flex-direction: column;
+  }
+
+  .start__description {
+    margin: 0 auto;
+  }
+
+  .start__description,
+  .start__buttons {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .footer__divider {
+    margin-top: 20px;
+  }
 }
 
-.btn__menu {
-  display: block;
-}
+/*
 
-.about__container {
-  width: 70%;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
+SMALL PHONES, TABLETS, LARGE SMARTPHONES 
 
-.about__content {
-  width: 100%;
-}
+*/
 
-.about__title {
-  font-size: 32px;
-}
+@media (max-width: 768px) {
+  .about__container {
+    width: 90%;
+  }
 
-.about__description {
-  margin: 0 auto;
-  width: 80%;
-  margin-bottom: 8px;
-}
+  .about__description {
+    width: 100%;
+  }
 
-.about__input--container {
-  margin: 18px auto 0;
-}
+  .features__description {
+    width: 100%;
+  }
 
-.about__image {
-  width: 100%;
-}
+  .features__item {
+    width: 100%;
+    justify-content: center;
+  }
 
-.features__container {
-  width: 90%;
-}
+  .quality__container {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  .quality__image {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 32px;
+  }
 
-.features__description {
-  justify-content: center;
-  text-align: center;
-  max-width: 430px;
-  margin: 0 auto;
-}
+  .quality__content {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
 
-.features__item {
-  width: calc(100% / 2);
-}
+  .quality__subtitle {
+    font-size: 36px;
+  }
 
-.quality__subtitle {
-  font-size: 36px;
-}
+  .quality__button {
+    margin: 0 auto;
+  }
 
-.quality__button {
-  margin: 0;
-}
+  .steps__container {
+    flex-direction: column;
+    width: 90%;
+  }
 
-.quality__content {
-  padding-right: 100px;
-}
+  .steps__image {
+    width: 100%;
+    margin-bottom: 48px;
+  }
 
-.quality__image {
-  padding-right: 80px;
-}
+  .steps__content {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
 
-.steps__subtitle {
-  font-size: 36px;
-}
+  .steps__subtitle {
+    font-size: 36px;
+  }
 
-.steps__image {
-  width: 60%;
-}
+  .step {
+    flex-direction: column;
+  }
 
-.steps__content {
-  width: 40%;
-}
+  .step__number {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
 
-.values__title {
-  text-align: left;
-}
+  .step__title {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
 
-.values__subtitle {
-  font-size: 36px;
-}
+  .step__description {
+    max-width: none;
+  }
 
-.values__principles--list {
-  flex-wrap: wrap;
-}
+  .values__container {
+    width: 90%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
 
-.values__principle--title {
-  justify-content: left;
-}
+  .values__image {
+    width: 100%;
+    margin-bottom: 36px;
+  }
 
-.values__principle--description {
-  text-align: left;
-}
+  .values__content {
+    width: 100%;
+    padding: 0;
+  }
 
-.values__button {
-  margin: 0;
-}
+  .values__title {
+    text-align: center;
+  }
 
-.plans {
-  margin-top: 44px;
-}
+  .values__subtitle {
+    font-size: 40px;
+  }
 
-.plan {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 24px;
-  margin-top: 24px;
-}
+  .values__principle--title {
+    justify-content: center;
+    text-align: center;
+  }
 
-.testimonials__image {
-  padding-right: 16px;
-}
+  .values__principle {
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+  }
 
-.testimonials__subtitle {
-  font-size: 44px;
-}
+  .values__principle--description {
+    max-width: 360px;
+    text-align: center;
+  }
 
-.testimonial__profile {
-  flex-direction: row;
-  align-items: center;
-  text-align: left;
-}
+  .values__button {
+    margin: 0 auto;
+  }
 
-.testimonial__profile--image {
-  margin: 0;
-  flex-shrink: 0;
-}
+  .testimonials__container {
+    flex-direction: column;
+    width: 90%;
+  }
 
-.testimonial__profile--info {
-  display: flex;
-  flex-direction: column;
-  margin-left: 16px;
-  margin-right: auto;
-  padding: 0;
-}
+  .testimonials__subtitle {
+    font-size: 36px;
+  }
 
-.testimonial__profile--name {
-  padding-top: 0;
-}
+  .testimonials__image {
+    width: 100%;
+    margin-bottom: 48px;
+  }
 
-.testimonial__profile--position {
-  padding-top: 4px;
-}
+  .testimonials__content {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+  }
 
-.testimonial__buttons {
-  margin: 0;
-}
+  .footer__category {
+    width: 100%/4;
+    margin-bottom: 24px;
+  }
 
-.start__container {
-  flex-direction: column;
-}
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.start__description {
-  margin: 0 auto;
-}
+  .footer__bottom--top {
+    margin-bottom: 32px;
+  }
 
-.start__description,
-.start__buttons {
-  width: 100%;
-  padding: 10px 20px;
-}
+  .footer__bottom--copyright {
+    margin-bottom: 32px;
+  }
 
-.footer__divider {
-  margin-top: 20px;
-}
 }
 
 /* 
@@ -1438,135 +1613,8 @@ SMALL PHONES, LARGE SMARTPHONES
     max-width: none;
   }
 
-  .quality__container {
-    flex-direction: column-reverse;
-  }
-  .quality__image {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 32px;
-  }
-
-  .quality__content {
-    width: 100%;
-    padding: 0;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .quality__subtitle {
-    font-size: 32px;
-  }
-
-  .quality__button {
-    margin: 0 auto;
-  }
-
-  .steps__container {
-    flex-direction: column;
-  }
-
-  .steps__image {
-    width: 100%;
-    margin-bottom: 48px;
-  }
-
-  .steps__content {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
-  }
-
-  .steps__subtitle {
-    font-size: 32px;
-  }
-
-  .step {
-    flex-direction: column;
-  }
-
-  .step__number {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 8px;
-  }
-
-  .step__title {
-    margin: 0 auto;
-    margin-bottom: 8px;
-  }
-
-  .step__description {
-    max-width: none;
-  }
-
-  .values__container {
-    flex-direction: column-reverse;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .values__image {
-    width: 100%;
-    margin-bottom: 36px;
-  }
-
-  .values__content {
-    width: 100%;
-    padding: 0;
-  }
-
-  .values__title {
-    text-align: center;
-  }
-
-  .values__subtitle {
-    font-size: 32px;
-  }
-
-  .values__principle--title {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .values__principle {
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .values__principle--description {
-    max-width: 360px;
-    text-align: center;
-  }
-
-  .values__button {
-    margin: 0 auto;
-  }
-
   .pricing__subtitle {
     font-size: 40px;
-  }
-
-  .testimonials__container {
-    flex-direction: column;
-  }
-
-  .testimonials__subtitle {
-    font-size: 32px;
-  }
-
-  .testimonials__image {
-    width: 100%;
-    margin-bottom: 48px;
-  }
-
-  .testimonials__content {
-    width: 100%;
-    padding: 0;
-    justify-content: center;
-    text-align: center;
   }
 
   .testimonial__profile {
@@ -1620,24 +1668,10 @@ SMALL PHONES, LARGE SMARTPHONES
 
   .footer__category {
     width: calc(100%/3);
-    margin-bottom: 24px;
   }
 
   .footer__links {
     align-items: center;
-  }
-
-  .footer__bottom {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer__bottom--top {
-    margin-bottom: 32px;
-  }
-
-  .footer__bottom--copyright {
-    margin-bottom: 32px;
   }
 
 }
