@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   position: relative;
@@ -43,6 +47,7 @@ nav {
   font-size: 24px;
   font-weight: 700;
   color: #494646;
+  margin-left: 12px;
 }
 
 .nav__logo--img {
@@ -101,6 +106,78 @@ nav {
   transform: scaleY(1);
 }
 
+.btn__menu {
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  color: #494646;
+  display: none;
+}
+
+.menu__backdrop {
+  position: fixed;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  top: 24px;
+  left: 16px;
+  right: 16px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  transform: translateY();
+  transition: all 350ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu--open {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__list {
+  margin: 12px 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu__link {
+  color: #494646;
+}
+
+.menu__link--primary {
+  display: flex;
+  background-color: #6415ff;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 50px;
+}
+
+.btn__menu--close {
+  display: block;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  font-size: 22px;
+  padding: 4px;
+  color: #494646;
+}
+
 /*
 
 ABOUT SECTION
@@ -113,7 +190,7 @@ ABOUT SECTION
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  padding: 48px 20px 0;
+  padding: 80px 20px 0;
 }
 
 .about__content {
@@ -160,7 +237,6 @@ ABOUT SECTION
   display: flex;
   align-items: center;
   justify-content: center;
-  white-space: nowrap;
 }
 
 .about__button:hover {
@@ -216,7 +292,7 @@ FEATURES SECTION
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 80px 0;
+  padding: 80px 20px;
 }
 
 .features__title {
@@ -227,6 +303,7 @@ FEATURES SECTION
 }
 
 .features__subtitle {
+  font-size: 48px;
   color: #494646;
   font-weight: 700;
   text-align: center;
@@ -234,11 +311,16 @@ FEATURES SECTION
 }
 
 .features__description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   color: #49464675;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.7;
   margin-bottom: 40px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .features__list {
@@ -273,7 +355,7 @@ FEATURES SECTION
 }
 
 .features__item--description h2 {
-  font-size: 20px;
+  font-size: 24px;
   color: #494646;
   margin-bottom: 12px;
 }
@@ -314,6 +396,7 @@ QUALITY SECTION
 }
 
 .quality__subtitle {
+  font-size: 48px;
   color: #494646;
   font-weight: 700;
   margin-bottom: 16px;
@@ -331,7 +414,7 @@ QUALITY SECTION
   display: block;
   margin: 0 auto;
   background-color: #5d3eff;
-  padding: 8px 20px;
+  padding: 12px 32px;
   border-radius: 50px;
   color: white;
   width: fit-content;
@@ -399,6 +482,7 @@ STEPS SECTION
 }
 
 .steps__subtitle {
+  font-size: 48px;
   color: #494646;
   font-weight: 700;
   margin-bottom: 20px;
@@ -473,6 +557,7 @@ VALUES SECTION
 }
 
 .values__subtitle {
+  font-size: 48px;
   color: #494646;
   font-weight: 700;
   margin-bottom: 20px;
@@ -495,7 +580,6 @@ VALUES SECTION
   display: flex;
   max-width: none;
   flex-direction: row;
-  max-width: none;
 }
 
 .values__principle {
@@ -509,6 +593,8 @@ VALUES SECTION
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .values__image--wrapper {
@@ -541,6 +627,7 @@ VALUES SECTION
   text-align: center;
   justify-content: center;
   color: #49464675;
+  margin: 20px 0;
 }
 
 .values__button {
@@ -548,7 +635,7 @@ VALUES SECTION
   margin: 0 auto;
   text-align: center;
   background-color: #5d3eff;
-  padding: 8px 20px;
+  padding: 12px 32px;
   border-radius: 50px;
   color: white;
   width: fit-content;
@@ -582,6 +669,7 @@ PRICING SECTION
 }
 
 .pricing__subtitle {
+  font-size: 48px;
   color: #494646;
   font-weight: 700;
   text-align: center;
@@ -628,7 +716,7 @@ PRICING SECTION
 }
 
 .plan__stripe {
-  height: 6px;
+  height: 8px;
   left: 0;
   right: 0;
   top: 0;
@@ -664,14 +752,14 @@ PRICING SECTION
 }
 
 .plan__price {
-  font-size: 32px;
+  font-size: 52px;
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .plan__duration {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.25;
   color: #49464675;
@@ -692,6 +780,7 @@ PRICING SECTION
 }
 
 .plan__target {
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -702,7 +791,8 @@ PRICING SECTION
 }
 
 .plan__feature {
-  margin-top: 10px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 .plan__feature--business {
@@ -720,7 +810,7 @@ PRICING SECTION
 
 .plan__button {
   background-color: #5d3eff;
-  padding: 8px 20px;
+  padding: 12px 80px;
   border-radius: 50px;
   color: white;
   width: fit-content;
@@ -795,6 +885,7 @@ TESTIMONIALS SECTION
 }
 
 .testimonials__subtitle {
+  font-size: 48px;
   color: #494646;
   font-weight: 700;
   margin-bottom: 20px;
@@ -851,6 +942,7 @@ TESTIMONIALS SECTION
 
 .testimonial__profile--name {
   color: #494646;
+  font-size: 20px;
   font-weight: 700;
   padding-top: 20px;
 }
@@ -970,7 +1062,7 @@ FOOTER SECTION
 */
 
 footer {
-  padding: 96px 32px;
+  padding: 64px 32px;
   background-color: rgb(100, 21, 255);
   margin-bottom: -32px;
   position: relative;
@@ -984,7 +1076,7 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 80px 30px;
+  padding: 40px 0px;
   background-color: rgb(100, 21, 255);
 }
 
@@ -1003,7 +1095,7 @@ footer {
 .footer__title {
   font-weight: 700;
   color: white;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .footer__links {
@@ -1013,7 +1105,7 @@ footer {
 
 .footer__link {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   cursor: pointer;
   width: fit-content;
 }
@@ -1096,3 +1188,166 @@ footer {
   background-color: rgba(255, 255, 255, 0.753);
   transition: all 300ms ease;
 }
+
+/*
+
+SMALL PHONES, TABLETS, LARGE SMARTPHONES 
+
+*/
+
+@media (max-width: 768px) {
+.nav__links {
+  display: none;
+}
+
+.btn__menu {
+  display: block;
+}
+
+.about__container {
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about__content {
+  width: 100%;
+}
+
+.about__title {
+  font-size: 30px;
+}
+
+.about__input--container {
+  margin: 18px auto 0;
+}
+
+.about__image {
+  width: 100%;
+}
+
+.features__container {
+  width: 90%;
+}
+
+.features__description {
+  justify-content: center;
+  text-align: center;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.features__item {
+  width: calc(100% / 2);
+}
+
+.quality__subtitle {
+  font-size: 44px;
+}
+
+.quality__button {
+  margin: 0;
+}
+
+.quality__content {
+  padding-right: 20px;
+}
+
+.quality__image {
+  padding-left: 20px;
+}
+
+.steps__subtitle {
+  font-size: 44px;
+}
+
+.values__title {
+  text-align: left;
+}
+
+.values__subtitle {
+  font-size: 44px;
+}
+
+.values__principles--list {
+  flex-wrap: wrap;
+}
+
+.values__principle--title {
+  justify-content: left;
+}
+
+.values__principle--description {
+  text-align: left;
+}
+
+.values__button {
+  margin: 0;
+}
+
+.plans {
+  margin-top: 44px;
+}
+
+.plan {
+  width: calc((100% - 64px) / 1);
+  max-width: 400px;
+  margin-top: 24px;
+}
+
+.testimonials__image {
+  padding-right: 16px;
+}
+
+.testimonials__subtitle {
+  font-size: 30px;
+}
+
+.testimonial__profile {
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.testimonial__profile--image {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.testimonial__profile--info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  margin-right: auto;
+  padding: 0;
+}
+
+.testimonial__profile--name {
+  padding-top: 0;
+}
+
+.testimonial__profile--position {
+  padding-top: 4px;
+}
+
+.testimonial__buttons {
+  margin: 0;
+}
+
+.start__container {
+  flex-direction: column;
+}
+
+.start__description {
+  margin: 0 auto;
+}
+
+.start__description,
+.start__buttons {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+}
+

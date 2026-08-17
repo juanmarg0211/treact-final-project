@@ -26,6 +26,34 @@
             <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
           </div>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="" class="menu__link" onclick="closeMenu()">About</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link" onclick="closeMenu()">Blog</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link" onclick="closeMenu()">Pricing</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link" onclick="closeMenu()">Contact Us</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link" onclick="closeMenu()">Login</a>
+            </li>
+            <li class="menu__list">
+              <a href="" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </section>
@@ -62,42 +90,42 @@
           <li class="features__item">
             <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="features__item--icon" alt="Feature 1">
             <div class="features__item--description">
-              <h2>Secure</h2>
+              <h2 class="features__item--title">Secure</h2>
               <p class="features__item--description--para">We strictly only deal with vendors that provide top notch security.</p>
             </div>
           </li>
           <li class="features__item">
             <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" class="features__item--icon" alt="Feature 2">
             <div class="features__item--description">
-              <h2>24/7 Support</h2>
+              <h2 class="features__item--title">24/7 Support</h2>
               <p class="features__item--description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </li>
           <li class="features__item">
             <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" class="features__item--icon" alt="Feature 3">
             <div class="features__item--description">
-              <h2>Customizable</h2>
+              <h2 class="features__item--title">Customizable</h2>
               <p class="features__item--description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </li>
           <li class="features__item">
             <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" class="features__item--icon" alt="Feature 4">
             <div class="features__item--description">
-              <h2>Reliable</h2>
+              <h2 class="features__item--title">Reliable</h2>
               <p class="features__item--description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </li>
           <li class="features__item">
             <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" class="features__item--icon" alt="Feature 5">
             <div class="features__item--description">
-              <h2>Fast</h2>
+              <h2 class="features__item--title">Fast</h2>
               <p class="features__item--description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </li>
           <li class="features__item">
             <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" class="features__item--icon" alt="Feature 6">
             <div class="features__item--description">
-              <h2>Easy</h2>
+              <h2 class="features__item--title">Easy</h2>
               <p class="features__item--description--para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </li>
@@ -281,8 +309,10 @@
           <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolor molestias hic quos? Architecto maxime nisi cumque, dignissimos consequuntur omnis quaerat accusantium tempora eveniet. Sint, enim magni? Doloremque, vitae quam!</p>
           <div class="testimonial__profile">
             <img src="./assets/photo-1494790108377-be9c29b29330.avif" class="testimonial__profile--image">
-            <div class="testimonial__profile--name">Charlotte Hale</div>
-            <p class="testimonial__profile--position">Director, Delos Inc.</p>
+            <div class="testimonial__profile--info">
+              <div class="testimonial__profile--name">Charlotte Hale</div>
+              <p class="testimonial__profile--position">Director, Delos Inc.</p>
+            </div>
             <div class="testimonial__buttons">
               <a href="">
                 <i class="fa-solid fa-arrow-left testimonial__button"></i>
